@@ -1,2 +1,10 @@
 # Quantum_Sensing
 Study of noise, metrology, and sensing in classical and quantum mechanics
+
+## Noise-enhanced stability (NES)
+In NES_classical, I study a 1D classical rigid pendulum in the presence of gravity and noise. At the unstable equilibrium, the addition of noise can increase the mean lifetime when averaged over many trajectories. This numerical simulation visualizes this effect through time dynamics, phase space, and parameter space for the noise volatility. Noise sources can be toggled between Brownian, GMR, and CIR. I use a simple Newtonian method for time evolution.
+
+In NES_quantum, I study a 1D quantum rigid pendulum in the presence of gravity and noise. I compute eigenstates in the periodic position basis, use a Vandermonde-Fourier transform for the momentum operators, and mostly study the resulting expectation values. Unlike its classical counterpart, the quantum pendulum suffers from uncertainty and self-interference effects. I'm exploring the de Broglie-Bohm picture as a way to realize well-defined trajectories that can be studied as in the classical pendulum. (See Bohmian_trajectories for illustration.) Noise is another issue, since it can be introduced in different ways; the Lindbladian master equation and the quantum Langevin equation are common methods. At the same time, quantum fluctuations themselves serve as a sort of noise.
+
+## Metrology
+In frequency_estimation, I study phase estimation schemes in classical metrology with a Doppler-shifted return signal as a toy model. Metrology (the study of measurement) broadly focuses on managing uncertainty. Classically, this includes understanding sources of uncertainty (e.g. thermal noise), minimizing its effects (e.g. by averaging), and developing precise tools (e.g. interferometers). Tools like interferometers rely on phase estimation -- taking some noisy signal and extracting the information held within it. In this code, I try out maximum likelihood estimation, the method of moments, and the autocorrelation phase.
